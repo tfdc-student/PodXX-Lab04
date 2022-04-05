@@ -7,9 +7,15 @@ terraform {
   }
 }
 
-/*
-THERE IS NO PROVIDER BLOCK WHEN THE CONFIGURATION IS USED AS A MODUL
-*/
+provider "vsphere" {
+  user           = "tfdc-student@vsphere.local"
+  password       = var.vsphere_password
+  vsphere_server = "vcenter.tfdc.lab"
+
+  # If you have a self-signed cert
+  allow_unverified_ssl = true
+}
+
 
 /*
 DATA blocks below are used to query vCenter for data used in the resource block
