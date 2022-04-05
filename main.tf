@@ -90,6 +90,7 @@ resource "vsphere_virtual_machine" "vm" {
       ipv4_gateway = var.DHCP ? null : var.ipv4_gateway
       linux_options {
         host_name = var.hostname
+        domain = "tfdc.lab"
       }
     }
   }
