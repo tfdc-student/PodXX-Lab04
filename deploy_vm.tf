@@ -10,7 +10,7 @@ terraform {
 provider "vsphere" {
   user           = "tfdc-student@vsphere.local"
   password       = var.vsphere_password
-  vsphere_server = "vcenter.tfdc.lab"
+  vsphere_server = "10.156.32.192"
 
   # If you have a self-signed cert
   allow_unverified_ssl = true
@@ -24,7 +24,7 @@ module "vm" {
   cpu       = 2
   ram       = 1024
   DHCP      = false
-  ipv4_address = "172.16.1.1XX"
+  ipv4_address = "172.16.1.100"
   ipv4_gateway = "172.16.1.254"
   ipv4_netmask = 24
 }
