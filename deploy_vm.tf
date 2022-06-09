@@ -10,7 +10,7 @@ terraform {
 provider "vsphere" {
   user           = "tfdc-student@vsphere.local"
   password       = var.vsphere_password
-  vsphere_server = "10.156.32.192"
+  vsphere_server = "10.154.11.12"
 
   # If you have a self-signed cert
   allow_unverified_ssl = true
