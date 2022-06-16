@@ -13,3 +13,7 @@ variable "hostname" {
 variable "vsphere_password" {
     type = string
 }
+
+variable "vcenter" {
+    type = string
+}
