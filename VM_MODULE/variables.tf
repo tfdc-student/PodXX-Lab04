@@ -65,12 +65,12 @@ variable "datacenter" {
 
 variable "datastore" {
     type = string
-    default = "WStore_01"
+    default = "DS-ASA"
 }
 
 variable "resource_pool" {
     type = string
-    default = "TFDC_Cluster/Resources"
+    default = "Resources"
 }
 
 variable "template" {
